@@ -16,5 +16,21 @@ namespace task_manager_c_
         {
             InitializeComponent();
         }
+
+        private void buttonRegister_Click(object sender, EventArgs e)
+        {
+            register myForm = new register();
+            this.Hide();
+            myForm.ShowDialog();
+            this.Close();
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            string username = textBoxLoginUsername.Text;
+            string password = textBoxLoginPassword.Text;
+
+            //log in the user SignInUser(username, password); if response == true open index else show messagebox
+        }
     }
 }

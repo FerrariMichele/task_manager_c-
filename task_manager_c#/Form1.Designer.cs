@@ -114,12 +114,13 @@
             // 
             this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(179)))), ((int)(((byte)(2)))));
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogin.Location = new System.Drawing.Point(63, 135);
+            this.buttonLogin.Location = new System.Drawing.Point(62, 154);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(75, 23);
             this.buttonLogin.TabIndex = 4;
             this.buttonLogin.Text = "Sign In";
             this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // labelRegister
             // 
@@ -140,6 +141,7 @@
             this.buttonRegister.TabIndex = 6;
             this.buttonRegister.Text = "Register";
             this.buttonRegister.UseVisualStyleBackColor = false;
+            this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
             // 
             // panelLogin
             // 
