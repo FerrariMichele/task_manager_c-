@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,7 @@ namespace task_manager_c_
             this.Hide();
             myForm.ShowDialog();
             this.Close();
+            Conn2Database();
         }
 
         private void buttonRegister_Click(object sender, EventArgs e)
@@ -49,6 +51,23 @@ namespace task_manager_c_
             //this.Hide();
             //myForm.ShowDialog();
             //this.Close();
+        }
+
+        public void Conn2Database()
+        {
+            MySqlConnection conn;
+            int result;
+            string connString = "SERVER=localhost;PORT=3306;DATABASE=my_micheleferrari;UID=root;PASSWORD=;";
+            try
+            {
+                conn = new MySqlConnection();
+                conn.ConnectionString = connString;
+                conn.Open();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

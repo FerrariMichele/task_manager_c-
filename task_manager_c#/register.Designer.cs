@@ -33,6 +33,14 @@
             this.panelNav = new System.Windows.Forms.Panel();
             this.labelRegister = new System.Windows.Forms.Label();
             this.panelRegister = new System.Windows.Forms.Panel();
+            this.buttonRegisterPFP = new System.Windows.Forms.Button();
+            this.labelDOB = new System.Windows.Forms.Label();
+            this.dateTimePickerDOB = new System.Windows.Forms.DateTimePicker();
+            this.textBoxRegisterName = new System.Windows.Forms.TextBox();
+            this.labelRegisterPFP = new System.Windows.Forms.Label();
+            this.labelRegisterSurname = new System.Windows.Forms.Label();
+            this.textBoxRegisterSurname = new System.Windows.Forms.TextBox();
+            this.labelRegisterName = new System.Windows.Forms.Label();
             this.textBoxRegisterPasswordConf = new System.Windows.Forms.TextBox();
             this.textBoxRegisterEmail = new System.Windows.Forms.TextBox();
             this.labelRegisterPasswordConf = new System.Windows.Forms.Label();
@@ -44,14 +52,6 @@
             this.textBoxRegisterUsername = new System.Windows.Forms.TextBox();
             this.labelRegisterPassword = new System.Windows.Forms.Label();
             this.labelRegisterUsername = new System.Windows.Forms.Label();
-            this.textBoxRegisterName = new System.Windows.Forms.TextBox();
-            this.labelRegisterPFP = new System.Windows.Forms.Label();
-            this.labelRegisterSurname = new System.Windows.Forms.Label();
-            this.textBoxRegisterSurname = new System.Windows.Forms.TextBox();
-            this.labelRegisterName = new System.Windows.Forms.Label();
-            this.dateTimePickerDOB = new System.Windows.Forms.DateTimePicker();
-            this.labelDOB = new System.Windows.Forms.Label();
-            this.buttonRegisterPFP = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureTangerLogo)).BeginInit();
             this.panelNav.SuspendLayout();
             this.panelRegister.SuspendLayout();
@@ -114,6 +114,77 @@
             this.panelRegister.Name = "panelRegister";
             this.panelRegister.Size = new System.Drawing.Size(451, 259);
             this.panelRegister.TabIndex = 3;
+            // 
+            // buttonRegisterPFP
+            // 
+            this.buttonRegisterPFP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(179)))), ((int)(((byte)(2)))));
+            this.buttonRegisterPFP.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonRegisterPFP.Location = new System.Drawing.Point(248, 140);
+            this.buttonRegisterPFP.Name = "buttonRegisterPFP";
+            this.buttonRegisterPFP.Size = new System.Drawing.Size(187, 23);
+            this.buttonRegisterPFP.TabIndex = 20;
+            this.buttonRegisterPFP.Text = "Upload";
+            this.buttonRegisterPFP.UseVisualStyleBackColor = false;
+            // 
+            // labelDOB
+            // 
+            this.labelDOB.AutoSize = true;
+            this.labelDOB.Location = new System.Drawing.Point(15, 124);
+            this.labelDOB.Name = "labelDOB";
+            this.labelDOB.Size = new System.Drawing.Size(66, 13);
+            this.labelDOB.TabIndex = 19;
+            this.labelDOB.Text = "Date of Birth";
+            // 
+            // dateTimePickerDOB
+            // 
+            this.dateTimePickerDOB.Location = new System.Drawing.Point(18, 101);
+            this.dateTimePickerDOB.MaxDate = new System.DateTime(2025, 1, 20, 0, 0, 0, 0);
+            this.dateTimePickerDOB.Name = "dateTimePickerDOB";
+            this.dateTimePickerDOB.Size = new System.Drawing.Size(184, 20);
+            this.dateTimePickerDOB.TabIndex = 18;
+            this.dateTimePickerDOB.Value = new System.DateTime(2025, 1, 16, 0, 0, 0, 0);
+            // 
+            // textBoxRegisterName
+            // 
+            this.textBoxRegisterName.Location = new System.Drawing.Point(248, 101);
+            this.textBoxRegisterName.Name = "textBoxRegisterName";
+            this.textBoxRegisterName.Size = new System.Drawing.Size(187, 20);
+            this.textBoxRegisterName.TabIndex = 16;
+            // 
+            // labelRegisterPFP
+            // 
+            this.labelRegisterPFP.AutoSize = true;
+            this.labelRegisterPFP.Location = new System.Drawing.Point(245, 163);
+            this.labelRegisterPFP.Name = "labelRegisterPFP";
+            this.labelRegisterPFP.Size = new System.Drawing.Size(72, 13);
+            this.labelRegisterPFP.TabIndex = 15;
+            this.labelRegisterPFP.Text = "Profile Picture";
+            // 
+            // labelRegisterSurname
+            // 
+            this.labelRegisterSurname.AutoSize = true;
+            this.labelRegisterSurname.Location = new System.Drawing.Point(15, 163);
+            this.labelRegisterSurname.Name = "labelRegisterSurname";
+            this.labelRegisterSurname.Size = new System.Drawing.Size(49, 13);
+            this.labelRegisterSurname.TabIndex = 14;
+            this.labelRegisterSurname.Text = "Surname";
+            // 
+            // textBoxRegisterSurname
+            // 
+            this.textBoxRegisterSurname.Location = new System.Drawing.Point(18, 140);
+            this.textBoxRegisterSurname.Name = "textBoxRegisterSurname";
+            this.textBoxRegisterSurname.PasswordChar = '*';
+            this.textBoxRegisterSurname.Size = new System.Drawing.Size(184, 20);
+            this.textBoxRegisterSurname.TabIndex = 13;
+            // 
+            // labelRegisterName
+            // 
+            this.labelRegisterName.AutoSize = true;
+            this.labelRegisterName.Location = new System.Drawing.Point(245, 124);
+            this.labelRegisterName.Name = "labelRegisterName";
+            this.labelRegisterName.Size = new System.Drawing.Size(35, 13);
+            this.labelRegisterName.TabIndex = 11;
+            this.labelRegisterName.Text = "Name";
             // 
             // textBoxRegisterPasswordConf
             // 
@@ -213,77 +284,6 @@
             this.labelRegisterUsername.Size = new System.Drawing.Size(55, 13);
             this.labelRegisterUsername.TabIndex = 0;
             this.labelRegisterUsername.Text = "Username";
-            // 
-            // textBoxRegisterName
-            // 
-            this.textBoxRegisterName.Location = new System.Drawing.Point(248, 101);
-            this.textBoxRegisterName.Name = "textBoxRegisterName";
-            this.textBoxRegisterName.Size = new System.Drawing.Size(187, 20);
-            this.textBoxRegisterName.TabIndex = 16;
-            // 
-            // labelRegisterPFP
-            // 
-            this.labelRegisterPFP.AutoSize = true;
-            this.labelRegisterPFP.Location = new System.Drawing.Point(245, 163);
-            this.labelRegisterPFP.Name = "labelRegisterPFP";
-            this.labelRegisterPFP.Size = new System.Drawing.Size(72, 13);
-            this.labelRegisterPFP.TabIndex = 15;
-            this.labelRegisterPFP.Text = "Profile Picture";
-            // 
-            // labelRegisterSurname
-            // 
-            this.labelRegisterSurname.AutoSize = true;
-            this.labelRegisterSurname.Location = new System.Drawing.Point(15, 163);
-            this.labelRegisterSurname.Name = "labelRegisterSurname";
-            this.labelRegisterSurname.Size = new System.Drawing.Size(49, 13);
-            this.labelRegisterSurname.TabIndex = 14;
-            this.labelRegisterSurname.Text = "Surname";
-            // 
-            // textBoxRegisterSurname
-            // 
-            this.textBoxRegisterSurname.Location = new System.Drawing.Point(18, 140);
-            this.textBoxRegisterSurname.Name = "textBoxRegisterSurname";
-            this.textBoxRegisterSurname.PasswordChar = '*';
-            this.textBoxRegisterSurname.Size = new System.Drawing.Size(184, 20);
-            this.textBoxRegisterSurname.TabIndex = 13;
-            // 
-            // labelRegisterName
-            // 
-            this.labelRegisterName.AutoSize = true;
-            this.labelRegisterName.Location = new System.Drawing.Point(245, 124);
-            this.labelRegisterName.Name = "labelRegisterName";
-            this.labelRegisterName.Size = new System.Drawing.Size(35, 13);
-            this.labelRegisterName.TabIndex = 11;
-            this.labelRegisterName.Text = "Name";
-            // 
-            // dateTimePickerDOB
-            // 
-            this.dateTimePickerDOB.Location = new System.Drawing.Point(18, 101);
-            this.dateTimePickerDOB.MaxDate = new System.DateTime(2025, 1, 16, 11, 23, 16, 0);
-            this.dateTimePickerDOB.Name = "dateTimePickerDOB";
-            this.dateTimePickerDOB.Size = new System.Drawing.Size(184, 20);
-            this.dateTimePickerDOB.TabIndex = 18;
-            this.dateTimePickerDOB.Value = new System.DateTime(2025, 1, 16, 0, 0, 0, 0);
-            // 
-            // labelDOB
-            // 
-            this.labelDOB.AutoSize = true;
-            this.labelDOB.Location = new System.Drawing.Point(15, 124);
-            this.labelDOB.Name = "labelDOB";
-            this.labelDOB.Size = new System.Drawing.Size(66, 13);
-            this.labelDOB.TabIndex = 19;
-            this.labelDOB.Text = "Date of Birth";
-            // 
-            // buttonRegisterPFP
-            // 
-            this.buttonRegisterPFP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(179)))), ((int)(((byte)(2)))));
-            this.buttonRegisterPFP.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.buttonRegisterPFP.Location = new System.Drawing.Point(248, 140);
-            this.buttonRegisterPFP.Name = "buttonRegisterPFP";
-            this.buttonRegisterPFP.Size = new System.Drawing.Size(187, 23);
-            this.buttonRegisterPFP.TabIndex = 20;
-            this.buttonRegisterPFP.Text = "Upload";
-            this.buttonRegisterPFP.UseVisualStyleBackColor = false;
             // 
             // register
             // 
