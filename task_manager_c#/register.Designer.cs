@@ -173,7 +173,6 @@
             // 
             this.textBoxRegisterSurname.Location = new System.Drawing.Point(18, 140);
             this.textBoxRegisterSurname.Name = "textBoxRegisterSurname";
-            this.textBoxRegisterSurname.PasswordChar = '*';
             this.textBoxRegisterSurname.Size = new System.Drawing.Size(184, 20);
             this.textBoxRegisterSurname.TabIndex = 13;
             // 

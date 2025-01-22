@@ -42,6 +42,7 @@ namespace task_manager_c_
             {
                 case 0:
                     //redirect
+                    MessageBox.Show("Logged In");
                     break;
                 case 1:
                     MessageBox.Show("Username not found");
@@ -110,19 +111,21 @@ namespace task_manager_c_
             } catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
+                Environment.Exit(0);
             }
         }
 
-        private bool VerifyPassword(string password, string storedHash)
+        private bool VerifyPassword(string inputPassword, string storedHash)
         {
-            // Hash the input password and compare with the stored hash
+            // Hash the input password and compare it with the stored hash
             using (SHA256 sha256 = SHA256.Create())
             {
-                byte[] hashedPasswordBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                byte[] hashedPasswordBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(inputPassword));
                 string hashedPassword = BitConverter.ToString(hashedPasswordBytes).Replace("-", "").ToLower();
 
                 return hashedPassword == storedHash;
             }
         }
+
     }
 }
